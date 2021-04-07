@@ -11,6 +11,7 @@ using System.Linq;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using NeoCortex;
+using System.IO;
 
 namespace UnitTestsProject
 {
@@ -2804,7 +2805,7 @@ namespace UnitTestsProject
             int[] trueActive = new int[] { 1, 2, 5, 6, 8, 9 };
             int[] active = sp.InhibitColumnsLocal(mem, overlaps, density);
             Assert.IsTrue(trueActive.SequenceEqual(active));
-
+                    
             mem.HtmConfig.WrapAround = false;
             trueActive = new int[] { 1, 2, 5, 6, 9 };
             active = sp.InhibitColumnsLocal(mem, overlaps, density);

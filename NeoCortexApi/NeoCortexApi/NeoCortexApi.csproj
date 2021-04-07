@@ -20,6 +20,8 @@
 	<PackageIcon>NeoCortexAPI.png</PackageIcon>
 	  <IncludeSymbols>true</IncludeSymbols>
 	  <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	  <UserSecretsId>78efba70-aecd-441e-8252-99ee13166d11</UserSecretsId>
+	  <OutputType>Library</OutputType>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -51,6 +53,7 @@
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
     <None Include="Anomaly.cs" />
     <None Include="Classification.cs" />
     <None Include="DistributedCompute\HtmSparseIntDictionary.cs" />
@@ -65,7 +68,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
    
   </ItemGroup>
 

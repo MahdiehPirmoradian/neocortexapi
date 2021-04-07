@@ -5,6 +5,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using NeoCortexApi;
+using NeoCortexApi.Classifiers;
 using NeoCortexApi.Encoders;
 using NeoCortexApi.Entities;
 using NeoCortexApi.Network;
@@ -44,9 +45,12 @@ namespace NeoCortexApiSample
 
                 GlobalInhibition = true,
                 NumActiveColumnsPerInhArea = 0.02 * numColumns,
+                //Potential radious shows how many columns are in the neighborhood of the column.
                 PotentialRadius = (int)(0.8 * inputBits),
+                //this is related to the Global inhibition when it is -1 it means it is global inhibition
                 LocalAreaDensity = -1,
                 ActivationThreshold = 10,
+                //This are the maximum synapsses that you have.
                 MaxSynapsesPerSegment = (int)(0.02 * numColumns),
                 Random = new ThreadSafeRandom(42)
             };

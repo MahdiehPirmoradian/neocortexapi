@@ -1,0 +1,14 @@
+Topology: 16    | Inhibition type: Global  | Total time: 23,536 milliseconds (23.54 seconds).
+Topology: 16    | Inhibition type: Local   | Total time: 26,980 milliseconds (26.98 seconds).
+Topology: 24    | Inhibition type: Global  | Total time: 48,632 milliseconds (48.63 seconds).
+Topology: 24    | Inhibition type: Local   | Total time: 96,973 milliseconds (96.97 seconds).
+Topology: 32    | Inhibition type: Global  | Total time: 108,131 milliseconds (108.13 seconds).
+Topology: 32    | Inhibition type: Local   | Total time: 219,866 milliseconds (219.87 seconds).
+Topology: 40    | Inhibition type: Global  | Total time: 109,036 milliseconds (109.04 seconds).
+Topology: 40    | Inhibition type: Local   | Total time: 294,862 milliseconds (294.86 seconds).
+Topology: 48    | Inhibition type: Global  | Total time: 156,035 milliseconds (156.03 seconds).
+Topology: 48    | Inhibition type: Local   | Total time: 614,232 milliseconds (614.23 seconds).
+Topology: 54    | Inhibition type: Global  | Total time: 217,600 milliseconds (217.60 seconds).
+Topology: 54    | Inhibition type: Local   | Total time: 974,260 milliseconds (974.26 seconds).
+Topology: 64    | Inhibition type: Global  | Total time: 267,119 milliseconds (267.12 seconds).
+Topology: 64    | Inhibition type: Local   | Total time: 1,629,280 milliseconds (1,629.28 seconds).

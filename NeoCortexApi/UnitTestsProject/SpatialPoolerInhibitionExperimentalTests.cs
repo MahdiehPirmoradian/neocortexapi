@@ -26,10 +26,14 @@ namespace UnitTestsProject
         /// <param name="mnistImage"> Path to the source mnist image using in the test</param>
         /// <param name="imageSize"> Size of the image (image has same width and height)</param>
         /// <param name="columnDimension"> List of sparse space size.(with same width and height)</param>
+
+
+
         [TestMethod]
         [TestCategory("LongRunning")]
         [DataRow(@"Testfiles\digit7.png", new int[] { 32, 48, 64 }, new int[] { 16, 24, 32, 40, 48, 54, 64 })]
-        [DataRow(@"Testfiles\digit8.png", new int[] { 32, 48, 64 }, new int[] { 32, 64, 128 })]
+        //[DataRow(@"Testfiles\digit8.png", new int[] { 32, 48, 64 }, new int[] { 32, 64, 128 })]
+
         public void ExperimentInputSizeAndColumnDimension(string mnistImage, int[] imageSize, int[] columnDimension)
         {
             string name = GetFileName(mnistImage);
@@ -81,7 +85,7 @@ namespace UnitTestsProject
         [DataRow(@"Testfiles\digit7.png", 32, 32, 10, 1000)]
         [DataRow(@"Testfiles\digit7.png", 32, 64, 100, 1000)]
         [DataRow(@"Testfiles\digit7.png", 32, 64, 100, 1000)]
-        [DataRow(@"Testfiles\digit8.png", 32, 32, 100, 10)]
+        [DataRow(@"Testfiles\digit7.png", 32, 32, 100, 10)]
         public void ExperimentMaxBoostAndDutyCyclePeriod(string mnistImage, int imageSize, int columnDimension, double maxBoost, int dutyCyclePeriod)
         {
             string name = GetFileName(mnistImage);
@@ -121,7 +125,7 @@ namespace UnitTestsProject
         [TestMethod]
         [TestCategory("LongRunning")]
         [DataRow(@"Testfiles\digit7.png", 32, 64, new int[] { 4, 8, 12, 16 })]
-        [DataRow(@"Testfiles\digit8.png", 64, 64, new int[] { 4, 8, 16, 20, 24, 28, 32 })]
+       // [DataRow(@"Testfiles\digit8.png", 64, 64, new int[] { 4, 8, 16, 20, 24, 28, 32 })]
         public void ExperimentPotentialRadius(string mnistImage, int imageSize, int columnDimension, int[] potentialRadius)
         {
             string name = GetFileName(mnistImage);
